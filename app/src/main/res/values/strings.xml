@@ -3,5 +3,7 @@
     <string name="add_1">+1</string>
     <string name="add_2">+2</string>
     <string name="add_3">+3</string>
-
+    <string name="TeamA">Team A</string>
+    <string name="TeamB">Team B</string>
+    <string name="FatalFrame">0</string>
 </resources>
