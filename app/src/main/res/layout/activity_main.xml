@@ -193,26 +193,26 @@
         app:layout_constraintTop_toTopOf="@+id/score_a" />
 
     <ImageButton
-        android:id="@+id/Return"
+        android:id="@+id/ima_button_Return"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
-        app:layout_constraintBottom_toBottomOf="@+id/Reset"
-        app:layout_constraintEnd_toStartOf="@+id/Reset"
+        app:layout_constraintBottom_toBottomOf="@+id/ima_button_Reset"
+        app:layout_constraintEnd_toStartOf="@+id/ima_button_Reset"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/Reset"
+        app:layout_constraintTop_toTopOf="@+id/ima_button_Reset"
         app:srcCompat="@drawable/ic_baseline_reply_24" />
 
     <ImageButton
-        android:id="@+id/Reset"
+        android:id="@+id/ima_button_Reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/Return"
+        app:layout_constraintStart_toEndOf="@+id/ima_button_Return"
         app:layout_constraintTop_toTopOf="@+id/guideline6"
         app:srcCompat="@drawable/ic_baseline_loop_24" />
 
