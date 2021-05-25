@@ -11,7 +11,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Team A"
-        android:textColor="#4CAF50"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toStartOf="@+id/TeamB"
@@ -25,7 +24,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Team B"
-        android:textColor="#2196F3"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/TeamA"
         app:layout_constraintEnd_toEndOf="parent"
@@ -171,7 +169,6 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
         android:text="0"
-        android:textColor="#4CAF50"
         android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toStartOf="@+id/score_b"
@@ -184,7 +181,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
-        android:textColor="#2196F3"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="@+id/score_a"
         app:layout_constraintEnd_toEndOf="parent"
@@ -193,26 +189,26 @@
         app:layout_constraintTop_toTopOf="@+id/score_a" />
 
     <ImageButton
-        android:id="@+id/ima_button_Return"
+        android:id="@+id/ima_Button_Return"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        app:layout_constraintBottom_toBottomOf="@+id/ima_button_Reset"
-        app:layout_constraintEnd_toStartOf="@+id/ima_button_Reset"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ima_Button_Reset"
+        app:layout_constraintEnd_toStartOf="@+id/ima_Button_Reset"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/ima_button_Reset"
+        app:layout_constraintTop_toTopOf="@+id/ima_Button_Reset"
         app:srcCompat="@drawable/ic_baseline_reply_24" />
 
     <ImageButton
-        android:id="@+id/ima_button_Reset"
+        android:id="@+id/ima_Button_Reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/ima_button_Return"
+        app:layout_constraintStart_toEndOf="@+id/ima_Button_Return"
         app:layout_constraintTop_toTopOf="@+id/guideline6"
         app:srcCompat="@drawable/ic_baseline_loop_24" />
 
