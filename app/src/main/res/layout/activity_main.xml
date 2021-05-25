@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Team A"
+        android:textColor="#4CAF50"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toStartOf="@+id/TeamB"
@@ -24,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Team B"
+        android:textColor="#2196F3"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/TeamA"
         app:layout_constraintEnd_toEndOf="parent"
@@ -100,7 +102,7 @@
         android:backgroundTint="#4CAF50"
         android:text="@string/add_3"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toStartOf="@+id/button_B_add_3"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,28 +128,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.4" />
+        app:layout_constraintGuide_percent="0.3" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.8" />
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.6" />
+        app:layout_constraintGuide_percent="0.45" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.2" />
+        app:layout_constraintGuide_percent="0.15" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
@@ -162,6 +171,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
         android:text="0"
+        android:textColor="#4CAF50"
         android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toStartOf="@+id/score_b"
@@ -174,11 +184,36 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
+        android:textColor="#2196F3"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="@+id/score_a"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/score_a"
         app:layout_constraintTop_toTopOf="@+id/score_a" />
+
+    <ImageButton
+        android:id="@+id/Return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Reset"
+        app:layout_constraintEnd_toStartOf="@+id/Reset"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Reset"
+        app:srcCompat="@drawable/ic_baseline_reply_24" />
+
+    <ImageButton
+        android:id="@+id/Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Return"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        app:srcCompat="@drawable/ic_baseline_loop_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
